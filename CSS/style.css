@@ -117,11 +117,17 @@ body{
 }
 .oculta{
     position: relative;
-    background-color: rgba(0, 0, 0, 0.3 );
+    background-color: none;
     color: white;
-    width: 300px;
+    width: 700px;
     height: 300px;
     left: 50%;
     top: 60%;
     transform: translate(-50%,-50%);
+}
+.text{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    text-align: center;
 }
