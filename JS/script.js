@@ -30,7 +30,7 @@ function summary(){
     infos.style.background = 'rgba(220,20,60,0.7)';
     name.style.color = 'white' ;
     texto.style.color = 'white' ;
-    texto.innerHTML = "Summary: I'm Nathan Santos Ataliba, form in ";
+    texto.innerHTML = "Summary: I'm Nathan Santos Ataliba, 22 years old, formed in eletronic technical and future computer engineer. Atually i'm learning english and software development, always looking for more learning, i have expertise in HTML5, CSS3, SQL, C, C++,JAVA, JAVA SCRIPT, PYTHON.";
     grad.style.color = 'white';
 }
 function contacts(){
