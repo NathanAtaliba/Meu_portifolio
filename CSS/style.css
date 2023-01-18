@@ -1,133 +1,229 @@
 *{
-    margin:0;
+    margin:0 auto;
+    padding: auto;
     box-sizing: border-box;
 }
-body{
-    background-image: url('fundo.jpg');
-    width: 100%;
-    height: 100vh;
-    background-size:contain;
-    text-align: center;
+
+@media(max-width:600px){
+    .menu-container{
+        position: relative;
+        left: 5px;
+        top: 5px;
+        background-color: white;
+        border-radius: 3px;
+        width: 30px;
+        height: 30px;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+    }
+    .header{
+        width: 100%;
+        height: 1000px;
+        background-image: linear-gradient(to right, black, white);     
+    }
+    .linhas:nth-child(1) {
+        position: absolute;
+        background-color: black;    
+        width: 20px;
+        height: 2px;
+        top:8px;
+        left: 5px;
+        
+    }
+    .linhas:nth-child(2) {
+        position: absolute;
+        background-color: black;
+        width: 20px;
+        height: 2px; 
+        top:14px;
+        left: 5px;
+    }
+    .linhas:nth-child(3) {
+        position: absolute;
+        background-color: black;
+        width: 20px;
+        height: 2px;
+        bottom:8px;
+        left: 5px;   
+    }
+    .fundo{
+        background-image: linear-gradient(to right, white, black);
+        width: 100%;
+        height: 100vh;     
+    }
+    .texts{
+        position: absolute;
+        color:blue;
+        font-size: 0.7rem;
+        top: 30%;
+        left: 0%;
+    }
 }
-.menu{
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 150px;
-    font-size: 4rem;
-    align-items: center;
-    position: relative;
+@media(min-width:601px){
+    .menu-container{
+        position: relative;
+        left: 5px;
+        top: 5px;
+        background-color: white;
+        border-radius: 3px;
+        width: 30px;
+        height: 30px;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+    }
+    .header{
+        width: 100%;
+        height: 40px;
+        background-image: linear-gradient(to right, black, white);     
+    }
+    .linhas:nth-child(1) {
+        position: absolute;
+        background-color: black;    
+        width: 20px;
+        height: 2px;
+        top:8px;
+        left: 5px;
+        
+    }
+    .linhas:nth-child(2) {
+        position: absolute;
+        background-color: black;
+        width: 20px;
+        height: 2px; 
+        top:14px;
+        left: 5px;
+    }
+    .linhas:nth-child(3) {
+        position: absolute;
+        background-color: black;
+        width: 20px;
+        height: 2px;
+        bottom:8px;
+        left: 5px;   
+    }
+    .fundo{
+        background-image: linear-gradient(to right, white, black);
+        width: 100%;
+        height: 100vh;     
+    }
+    .texts{
+        position: absolute;
+        color:blue;
+        font-size: 2rem;
+        top: 30%;
+        left: 0%;
+    }  
 }
-.Home{
-    color: #9370DB  ;
-    font-size: 2.5rem;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    margin: 30px;
-    position: relative;
-    padding: 20px;
-    border-radius: 100px;
+@media(max-width:2000px){
+    .menu-container{
+        position: relative;
+        left: 5px;
+        top: 5px;
+        background-color: white;
+        border-radius: 3px;
+        width: 30px;
+        height: 30px;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+    }
+    .header{
+        width: 100%;
+        height: 40px;
+        background-image: linear-gradient(to right, black, white);     
+    }
+    .linhas:nth-child(1) {
+        position: absolute;
+        background-color: black;    
+        width: 20px;
+        height: 2px;
+        top:8px;
+        left: 5px;
+        
+    }
+    .linhas:nth-child(2) {
+        position: absolute;
+        background-color: black;
+        width: 20px;
+        height: 2px; 
+        top:14px;
+        left: 5px;
+    }
+    .linhas:nth-child(3) {
+        position: absolute;
+        background-color: black;
+        width: 20px;
+        height: 2px;
+        bottom:8px;
+        left: 5px;   
+    }
+    .fundo{
+        background-image: linear-gradient(to right, white, black);
+        width: 100%;
+        height: 100vh;     
+    }
+    .texts{
+        position: absolute;
+        color:blue;
+        font-size: 3.5rem;
+        top: 50%;
+        left: 10%;
+    }
 }
-.Home:hover{
-    background-color:rgba(0, 0, 0, 0.3 ); 
-    font-size: 4rem;
-}
-.Projects{
-    color: white;
-    font-size: 2.5rem;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    margin: 30px;
-    position: relative;
-    padding: 20px;
-    border-radius: 100px;
-}
-.Projects:hover{
-    background-color:rgba(0, 0, 0, 0.3 ); 
-    font-size: 4rem;
-}
-.Summary{
-    color: Crimson;
-    font-size: 2.5rem;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    margin: 30px;
-    position: relative;
-    padding: 20px;
-    border-radius: 100px;
-}
-.Summary:hover{
-    background-color:rgba(0, 0, 0, 0.3); 
-    font-size: 4rem;
-}
-.Contacts{
-    color: Khaki;
-    font-size: 2.5rem;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    margin: 30px;
-    position: relative;
-    padding: 20px;
-    border-radius: 100px;
-}
-.Contacts:hover{
-    background-color:rgba(0, 0, 0, 0.3 ); 
-    font-size: 4rem;
-}
-.infos{
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 800px;
-    height: 800px;
-    top: 50vh;
-    left: 50%;
-    transform: translate(-50vh,-50%);
-    position: relative;
-    border-radius: 20px;
-}
-.imagem{
-    background-image: url("eu.jpg");
-    width: 250px;
-    height: 250px;
-    border-radius: 500px;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%,-50%);
-    background-size: cover;
-    position: absolute;
-}
-.name{
-    color: white;
-    font-size: 3rem;
-    position: relative;
-}
-.grad{
-    color: white;
-    font-size: 2rem;
-    position: relative;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%,-50%);
-}
-.oculta{
-    position: relative;
-    background-color: none;
-    color: white;
-    width: 700px;
-    height: 300px;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%,-50%);
-}
-.text{
-    color: white;
-    font-size: 2rem;
-    position: absolute;
-    text-align: center;
-}
+@media(min-width:2001px){
+    .menu-container{
+        position: relative;
+        left: 20px;
+        top: 20px;
+        background-color: white;
+        border-radius: 3px;
+        width: 150px;
+        height: 150px;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+    }
+    .header{
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(to right, black, white);     
+    }
+    .linhas:nth-child(1) {
+        position: absolute;
+        background-color: black;    
+        width: 100px;
+        height: 5px;
+        top:25px;
+        left: 20px;
+        
+    }
+    .linhas:nth-child(2) {
+        position: absolute;
+        background-color: black;
+        width: 100px;
+        height: 5px; 
+        top:70px;
+        left: 20px;
+    }
+    .linhas:nth-child(3) {
+        position: absolute;
+        background-color: black;
+        width: 100px;
+        height: 5px;
+        bottom:25px;
+        left: 20px;   
+    }
+    .fundo{
+        background-image: linear-gradient(to right, white, black);
+        width: 100%;
+        height: 100vh;     
+    }
+    .texts{
+        position: absolute;
+        color:blue;
+        font-size: 8rem;
+        top: 50%;
+        left: 10%;
+    }}
